@@ -1,9 +1,9 @@
-import Likebutton from "@/components/Likebutton";
+import Cookiepopup from "@/components/Cookiepopup";
 
 export default function Home() {
   return (
     <div>
-      <Likebutton label="Like" />
+      <Cookiepopup />
     </div>
   );
 }
