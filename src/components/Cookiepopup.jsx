@@ -14,14 +14,14 @@ const Cookiepopup = () => {
 
     return (
         isVisible && (
-            <div className="cookie-popup">
-                <div className="top">
+            <section className="cookie-popup">
+                <header className="top">
                     <FaCookieBite className="cookie-icon" />
-                    <button onClick={() => setIsVisible(false)}><GrFormClose /></button>
-                </div>
+                    <button className="close" onClick={() => setIsVisible(false)}><GrFormClose /></button>
+                </header>
                 <p>We use cookies to improve your user experience.</p>
                 <button className="accept" onClick={handleAccept}>I Like Cookies</button>
-            </div>
+            </section>
         )
     )
 }
