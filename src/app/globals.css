@@ -45,3 +45,25 @@ body {
 .cookie-icon {
   font-size: 24px;
 }
+
+p{
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.accept {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accept:hover {
+  background: #ddd;
+}

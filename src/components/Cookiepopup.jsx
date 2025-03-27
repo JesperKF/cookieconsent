@@ -17,10 +17,10 @@ const Cookiepopup = () => {
             <div className="cookie-popup">
                 <div className="top">
                     <FaCookieBite className="cookie-icon" />
-                    <GrFormClose />
+                    <button onClick={() => setIsVisible(false)}><GrFormClose /></button>
                 </div>
                 <p>We use cookies to improve your user experience.</p>
-                <button onClick={handleAccept}>I Like Cookies</button>
+                <button className="accept" onClick={handleAccept}>I Like Cookies</button>
             </div>
         )
     )
