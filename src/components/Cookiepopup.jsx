@@ -5,22 +5,20 @@ import { useState } from "react";
 
 
 const Cookiepopup = () => {
-    const [isVisible, setIsVisible] = useState(true);
-
-
-    const handleAccept = () => {
-        setIsVisible(false);
-    };
+    const [cookiesAccpeted, setCookiesAccepted] = useState(false);
+    console.log(cookiesAccpeted);
 
     return (
-        isVisible && (
+        !cookiesAccpeted && (
             <section className="cookie-popup">
                 <header className="top">
                     <FaCookieBite className="cookie-icon" />
-                    <button className="close" onClick={() => setIsVisible(false)}><GrFormClose /></button>
+                    <button className="close"><GrFormClose /></button>
                 </header>
-                <p>We use cookies to improve your user experience.</p>
-                <button className="accept" onClick={handleAccept}>I Like Cookies</button>
+                <footer>
+                    <p>We use cookies to improve your user experience.</p>
+                    <button onClick={() => setCookiesAccepted(!cookiesAccpeted)} className="accept">I Like Cookies</button>
+                </footer>
             </section>
         )
     )
